@@ -1,0 +1,26 @@
+.nav-list {
+	list-style: none;
+}
+
+.nav-list li {
+	display:inline-block;
+}
+
+
+.jobb{
+	background-color: #467386;
+}
+
+.skole {
+	background-color: #d46a6a;
+}
+
+.fest {
+	background-color: #ff9c44;
+}
+
+img {
+	display: block;
+	clear: both;
+	width: 100%;
+};
