@@ -14,7 +14,7 @@ require_once('../functions.php')
 			<h1>NTNU Gløshaugen</h1>
 		</header>
 
-		<?php echo (getNavbar());?>
+		<?php echo (get_navbar());?>
 
 
 		<section id="main">
@@ -26,7 +26,7 @@ require_once('../functions.php')
 			<p>
 				I 1994 ble det gjennomført en åpen arkitektkonkurranse om et realfagbygg på Gløshaugen. Arkitektkontoret Narud-Stokke-Wiig vant konkurransen i samarbeid med HUS Arkitekter AS, og de fikk oppdraget med å prosjektere det nye bygget. I 1996 vedtok Stortinget å etablere NTNU. Samme år ble det bevilget midler over statsbudsjettet til å starte byggingen, for å kunne samle de realfaglige fakultetene, som var spredt på flere områder i byen. Grunnarbeidene startet samme år og 28. mai 1997 ble grunnstenen lagt ned av daværende statsråd Gudmund Hernes.
 			</p>
-			<p><a href="<?=getPath()?>/">Gå til neste bygg</a></p>
+			<p><a href="<?=get_path()?>/">Gå til neste bygg</a></p>
 		</section>
 
 	</div>

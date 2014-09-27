@@ -3,11 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-		<title>Hovedside | NTNU Gløshaugen</title>
-	</head>
+	<?php echo (get_header());?>
 	<body>
 		<div class="container">
 			<header>
