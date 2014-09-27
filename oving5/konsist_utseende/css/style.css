@@ -15,3 +15,9 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+#main {
+	width: 960px;
+	margin: 0 auto;
+	clear:both;
+}

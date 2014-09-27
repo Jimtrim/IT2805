@@ -41,8 +41,9 @@ function get_header () {
 }
 
 function get_path() {
+	$folder_name = "konsist_utseende";
 	$path = $_SERVER['REQUEST_URI'];
-	$path = preg_replace("/\/gloshaugen(.*)/", "", $path);
-	$path .= "/gloshaugen";
+	$path = preg_replace("/\/$folder_name(.*)/", "", $path);
+	$path .= "/$folder_name";
 	return $path;
 }
