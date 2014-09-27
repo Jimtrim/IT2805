@@ -3,4 +3,40 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Verdana, "Bitstream Vera Sans", sans-serif;
+}
+section#main {
+	margin: 0 auto;
+	width: 960px;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+}
+
+td.jobb{
+	background-color: #467386;
+}
+
+td.skole {
+	background-color: #d46a6a;
+}
+
+td.fest {
+	background-color: #ff9c44;
+}
+tr:nth-child(odd) {
+	background-color: beige;
+	border-bottom: 1px solid #000;
+}
+
+a { text-decoration: underline; }
+a:hover { text-decoration: none; }
+
+img {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 }

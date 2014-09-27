@@ -6,12 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>IT2805 - Jim Frode Hoff</title>
 
-		<!-- Bootstrap CSS -->
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
 
 	</head>
 	<body>
-		<div class="container">
+		<section id="main">
 			<h1 class="text-center">Min side for webteknologi-øvinger</h1>
 				
 			<h2>Øvinger</h2>
@@ -21,12 +20,7 @@
 				<li><a href="oving3/">Øving 3</a></li>
 				<li><a href="oving4/">Øving 4</a></li>
 				<li><a href="oving5/">Øving 5</a></li>
-			</ol>	
-
-			<!-- jQuery -->
-			<script src="//code.jquery.com/jquery.js"></script>
-			<!-- Bootstrap JavaScript -->
-			<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		</div>	
+			</ol>
+		</section>
 	</body>
 </html>
