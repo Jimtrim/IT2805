@@ -25,6 +25,8 @@ function get_navbar() {
 
 
 function get_header () {
+	$path = get_path();
+
 	return'<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +34,8 @@ function get_header () {
 		<title>IT2805 - Jim Frode Hoff</title>
 
 		<!-- Bootstrap CSS -->
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+		<link rel="stylesheet" media="screen" href="' . $path . '/css/style.css">
 
 	</head>';
 }
