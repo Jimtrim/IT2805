@@ -1,0 +1,149 @@
+<html>
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		input:invalid:focus {
+			border: 1px solid red;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Forms</h1>
+
+	<form class="form-horizontal" method="post" action="http://www.idi.ntnu.no/~michailg/IT2805/form.php">
+		<fieldset>
+			<!-- Form Name -->
+			<legend>Course form</legend>
+
+			<!-- name-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="name">Name</label>
+				<div class="col-md-4">
+					<input required id="name" name="name" type="text" placeholder="Your name" class="form-control input-md">
+				</div>
+			</div>
+
+			<!-- email-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="email">Email</label>
+				<div class="col-md-4">
+					<input required id="email" name="email" type="email" placeholder="Your email" class="form-control input-md">
+				</div>
+			</div>
+
+			<!-- address-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="address">Address</label>
+				<div class="col-md-4">
+					<input id="address" name="address" type="text" placeholder="Your adress" class="form-control input-md">
+				</div>
+			</div>
+
+			<!-- phone -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="phone">Phone number</label>
+				<div class="col-md-4">
+					<input id="phone" name="phone" type="text" placeholder="Your phonenumber" class="form-control input-md">
+				</div>
+			</div>
+
+			<!-- student-type-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="year">Current year</label>
+				<div class="col-md-4">
+					<select required id="year" name="year" class="form-control">
+						<option value="1">1. year (Freshman)</option>
+						<option value="2">2. year (Sophmore)</option>
+						<option value="3">3. year (Junior)</option>
+						<option value="4">4. year (Senior)</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- startDate -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="startDate">Excpected start date</label>
+				<div class="col-md-4">
+					<input required id="startDate" name="startDate" type="date" placeholder="Excpected start date" class="form-control input-md">
+				</div>
+			</div>
+
+
+			<!-- Multiple Checkboxes -->
+			<div class="form-group">
+				<label class="col-md-4 control-label">Multiple Checkboxes</label>
+				<div class="col-md-4">
+					<div class="checkbox">
+						<label for="classes-1">
+							<input type="checkbox" name="classes" id="classes-1" value="1">
+							ITX1001: HTML Basics
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="classes-2">
+							<input type="checkbox" name="classes" id="classes-2" value="2">
+							ITX1002: URLs and Site Structures
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="classes-3">
+							<input type="checkbox" name="classes" id="classes-3" value="3">
+							ITX2001: Introduction to Cascading Style Sheets (CSS)
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="classes-4">
+							<input type="checkbox" name="classes" id="classes-4" value="4">
+							ITX2002: CSS Properties and Applications
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="classes-5">
+							<input type="checkbox" name="classes" id="classes-5" value="5">
+							ABC1001: Working with Multimedia on the Web
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="classes-6">
+							<input type="checkbox" name="classes" id="classes-6" value="6">
+							JSX1000: Introduction to JavaScript
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="classes-7">
+							<input type="checkbox" name="classes" id="classes-7" value="7">
+							JSX1040: JavaScript: DOM
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="classes-8">
+							<input type="checkbox" name="classes" id="classes-8" value="8">
+							XML1000: XML: Formatting Namespace Trees
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- startDate -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="comments">Comments</label>
+				<div class="col-md-4">
+					<textarea id="comments" name="comments" placeholder="Comments or notes" class="form-control input-md"></textarea>
+				</div>
+			</div>
+
+			<!-- Submit buttons -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+				<div class="col-md-4">
+					<button id="singlebutton" name="singlebutton" class="btn btn-primary">submit</button>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>
+
