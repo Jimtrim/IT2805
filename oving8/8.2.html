@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Event listener</title>
+	<script type="application/javascript">
+
+		addEventListener("load", function() {
+			var imdbTopTen = [
+				"The Shawshank Redemption ",
+				"The Godfather",
+				"The Godfather: Part II",
+				"The Dark Knight",
+				"Pulp Fiction",
+				"The Good, the Bad and the Ugly",
+				"Schindler's List",
+				"12 Angry Men",
+				"The Lord of the Rings: The Return of the King",
+				"Fight Club"
+			];
+			document.getElementById("out").textContent = imdbTopTen[ Math.round(Math.random() * 10)];
+		})
+	</script>
+</head>
+<body>
+<output id="out">
+
+</output>
+
+</body>
+</html>
