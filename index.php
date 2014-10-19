@@ -22,6 +22,8 @@
 				<li><a href="oving4/">Øving 4</a></li>
 				<li><a href="oving5/">Øving 5</a></li>
 				<li><a href="oving6/">Øving 6</a></li>
+				<hr>
+				<li><a href="oving8/">Øving 8</a></li>
 			</ol>	
 
 			<!-- jQuery -->
