@@ -1,5 +1,4 @@
 /* CSS-document */
-
 body {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Verdana, Arial, sans-serif;
 }
@@ -21,7 +20,6 @@ body {
 	margin-left: -30px;
 	font-size: larger;
 }
-
 
 #add-task-text {
 }

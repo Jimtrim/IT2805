@@ -1,12 +1,10 @@
 /**
  * Created by jimtrim on 26/10/14.
  */
-
 var Todo = Todo || {};
 Todo.addTask = function () {
 	var taskText = document.getElementById("add-task-text" ).value;
 	document.getElementById("add-task-text" ).value = "";
-	console.log(taskText);
 
 	document.getElementById("todo-list" ).appendChild(Todo.buildListElement(taskText));
 };
