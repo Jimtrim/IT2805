@@ -19,10 +19,10 @@
 				var fps = 1000 / 60;
 				doge.onload = function () {
 					setInterval(function () {
-						ctx.save(); //saves the state of canvas
-						ctx.clearRect(0, 0, canvas.width, canvas.height); //clear the canvas
+						ctx.save();
+						ctx.clearRect(0, 0, canvas.width, canvas.height);
 						ctx.translate(canvas.width/2, canvas.height/2);
-						ctx.rotate(Math.PI / 180 * (ang += 5)); //increment the angle and rotate the image
+						ctx.rotate(Math.PI / 180 * (ang -= 5));
 
 						ctx.drawImage(
 							doge,
