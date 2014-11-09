@@ -7,14 +7,48 @@
             #the-canvas { border: 1px dashed gray }   
         </style>
         <script>
-            addEventListener('load', function() {
-                var canvas = document.getElementById("the-canvas");
-				var ctx = canvas.getContext('2d');
+			addEventListener('load', function() {
+				var canvas = document.getElementById( "the-canvas" );
+				var ctx = canvas.getContext( '2d' );
+
+				var doge = new Image(); // HTML5 Constructor
+				doge.src = 'doge.jpg';
+				doge.alt = 'wow. such doge. much amaze.';
+
+				var ang = 0;
+				var fps = 1000 / 60;
+				doge.onload = function () {
+					setInterval(function () {
+						ctx.save(); //saves the state of canvas
+						ctx.clearRect(0, 0, canvas.width, canvas.height); //clear the canvas
+						ctx.translate(canvas.width/2, canvas.height/2);
+						ctx.rotate(Math.PI / 180 * (ang += 5)); //increment the angle and rotate the image
+
+						ctx.drawImage(
+							doge,
+							canvas.width/4 - doge.width*2,
+							canvas.height/4 - doge.height*2,
+							250,
+							250
+						);
+						ctx.drawImage(
+							doge,
+							canvas.width/4 - doge.width*3,
+							canvas.height/4 - doge.height*3,
+							150,
+							150
+						);
+						ctx.drawImage(
+							doge,
+							canvas.width/4 - doge.width*2,
+							canvas.height/4 - doge.height*2
+						);
+						ctx.restore();
+					}, fps);
+				};
 
 
-
-
-            });
+			});
         </script>
     </head>
     <body>
